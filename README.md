@@ -25,6 +25,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [About 🚀](#about-)
+- [Architecture](#architecture)
 - [AI Story Generation Pipeline](docs/ai-story-generation.md)
 - [Features 💪](#features-)
 - [Local development (monorepo)](#local-development-monorepo)
@@ -35,6 +36,7 @@
 
 ## 📚 Table of Contents
 - [About 🚀](#about-🚀)
+- [Architecture](#architecture)
 - [Features 💪](#features-💪)
 - [Local Development](#local-development-monorepo)
 - [Environment Variables](#environment-variables)
@@ -60,6 +62,8 @@
 - story-spark-ai - [Website](https://storysparkai.vercel.app/)
 - **`StorySparkAI`** is an open-source platform designed to empower creative minds by generating and showcasing AI-crafted stories from user prompts in a simple, engaging way.
 - With **`StorySparkAI`**, users can input an idea, explore multiple story variations, save their favorites, and leverage AI analysis to enhance their creative writing journey.
+
+## Architecture 
 
 <a id="features"></a>
 
