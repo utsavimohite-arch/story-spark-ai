@@ -65,6 +65,60 @@
 
 ## Architecture 
 
+The Story Spark AI application follows a simple client-server architecture where the frontend collects user inputs, the backend processes requests and orchestrates AI services, and the generated story is returned to the user.
+
+```text
+                          Story Spark AI
+                                  │
+                                  ▼
+                           +-------------+
+                           |    User     |
+                           +------+------+ 
+                                  │
+                                  ▼
+                    +----------------------------+
+                    |   Frontend (Next.js/React) |
+                    | • Story Creation UI        |
+                    | • Character Selection      |
+                    | • Theme & Prompt Builder   |
+                    +-------------+--------------+
+                                  │
+                            HTTP/API Requests
+                                  │
+                                  ▼
+                    +----------------------------+
+                    |     Backend API Server     |
+                    | • Authentication           |
+                    | • Story Pipeline           |
+                    | • Business Logic           |
+                    +------+------+--------------+
+                           │      │
+                AI Request │      │ Data Storage
+                           │      │
+          +----------------+      +----------------+
+          │                                      │
+          ▼                                      ▼
++--------------------------+          +------------------------+
+| AI Model / LLM Provider  |          | Database / Storage     |
+| • Story Generation       |          | • Users                |
+| • Prompt Processing      |          | • Stories              |
+| • Image Generation       |          | • Metadata             |
++-------------+------------+          +------------+-----------+
+              │                                    │
+              +----------------+-------------------+
+                               │
+                               ▼
+                  +----------------------------+
+                  | Generated Story & Assets   |
+                  +-------------+--------------+
+                                │
+                                ▼
+                             Frontend
+                                │
+                                ▼
+                               User
+```
+
 <a id="features"></a>
 
 ## Features 💪
